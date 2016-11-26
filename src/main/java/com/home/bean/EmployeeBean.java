@@ -3,11 +3,22 @@ package com.home.bean;
 import java.math.BigInteger;
 
 public class EmployeeBean {
+	
+	public EmployeeBean(){
+		
+	}
 
+	public EmployeeBean(String empName, String empCity, String empContactNumber) {
+		super();
+		this.empName = empName;
+		this.empCity = empCity;
+		this.empContactNumber = empContactNumber;
+	}
+	
 	private long empId;
 	private String empName;
 	private String empCity;
-	private BigInteger empContactNumber;
+	private String empContactNumber;
 	
 	public long getEmpId() {
 		return empId;
@@ -21,10 +32,10 @@ public class EmployeeBean {
 	public void setEmpCity(String empCity) {
 		this.empCity = empCity;
 	}
-	public BigInteger getEmpContactNumber() {
+	public String getEmpContactNumber() {
 		return empContactNumber;
 	}
-	public void setEmpContactNumber(BigInteger empContactNumber) {
+	public void setEmpContactNumber(String empContactNumber) {
 		this.empContactNumber = empContactNumber;
 	}
 	public String getEmpName() {

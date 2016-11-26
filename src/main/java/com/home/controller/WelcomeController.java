@@ -22,13 +22,9 @@ public class WelcomeController {
 	private WelcomeService welcomeService;
 
 	@RequestMapping(value = "/employees", method = RequestMethod.GET)
-	public ResponseEntity<List<EmployeeBean>> listEmployees() {
-		List<Employee> users = welcomeService.listEmployeess();
-		if (users.isEmpty()) {
-			//return new ResponseEntity<prepareListofBean(users)>(HttpStatus.NO_CONTENT);
-		}
-		//return new ResponseEntity<>(users, HttpStatus.OK);
-		return null;
+	public List<EmployeeBean> listEmployees() {
+		List<EmployeeBean> users = welcomeService.listEmployeess();
+		return users;
 	}
 
 	@SuppressWarnings("unused")

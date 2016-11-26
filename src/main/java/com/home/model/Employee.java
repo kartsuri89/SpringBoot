@@ -27,7 +27,7 @@ public class Employee implements Serializable{
 	private String empCity;
 	
 	@Column(name="empContactNumber")
-	private BigInteger empContactNumber;
+	private String empContactNumber;
 	
 	public long getEmpId() {
 		return empId;
@@ -41,10 +41,10 @@ public class Employee implements Serializable{
 	public void setEmpCity(String empCity) {
 		this.empCity = empCity;
 	}
-	public BigInteger getEmpContactNumber() {
+	public String getEmpContactNumber() {
 		return empContactNumber;
 	}
-	public void setEmpContactNumber(BigInteger empContactNumber) {
+	public void setEmpContactNumber(String empContactNumber) {
 		this.empContactNumber = empContactNumber;
 	}
 	public String getEmpName() {

@@ -12,12 +12,12 @@ import com.home.model.Employee;
 @Repository("welcomeDao")
 public class WelcomeDaoImpl implements WelcomeDao{
 	
-	@Autowired
+	/*@Autowired
 	private SessionFactory sessionFactory;
 
 	protected Session getSession() {
 		return sessionFactory.getCurrentSession();
-	}
+	}*/
 	
 	@Override
 	public void addEmployee(Employee employee) {
